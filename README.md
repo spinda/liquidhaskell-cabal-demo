@@ -2,6 +2,8 @@
 
 This is nearly complete, but:
 
+- Right now your `liquid` binary needs to be built from my `ghc-options` branch
+  on `ucsd-progsys/liquidhaskell`.
 - Some more documentation is needed.
 - `Setup.hs` dependencies won't make it into Cabal until 1.24, so the
   `Setup.hs` script in this project has all the code from `liquidhaskell-cabal`
