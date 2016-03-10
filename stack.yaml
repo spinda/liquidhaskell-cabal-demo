@@ -1,7 +1,5 @@
-resolver: nightly-2016-01-06
-
+resolver: lts-5.5
 compiler-check: newer-minor
-
 packages:
 - .
 
