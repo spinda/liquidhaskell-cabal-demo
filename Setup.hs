@@ -1,2 +1,3 @@
-import LiquidHaskell.Cabal
-main = liquidHaskellMain
+import Distribution.Simple
+import Data.Interned.Text
+main = defaultMain

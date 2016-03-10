@@ -2,6 +2,8 @@ resolver: lts-5.5
 compiler-check: newer-minor
 packages:
 - .
+explicit-setup-deps:
+  "*": true
 extra-deps:
 - liquidhaskell-cabal-0.1.0.0
 

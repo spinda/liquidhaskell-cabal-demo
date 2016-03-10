@@ -24,9 +24,10 @@ project.
 cabal install liquidhaskell-cabal
 ```
 
-If you're using stack, this should be taken care of by the
-`liquidhaskell-cabal-0.1.0.0` entry in this project's
-[`stack.yaml`](/stack.yaml) `extra-deps` field.
+If you're using stack, this is handled by the `explicit-setup-deps` and
+`extra-deps` entries in this project's [`stack.yaml` file](/stack.yaml) and the
+inclusion of `liquidhaskell-cabal` in each component's `build-depends` in the
+[`.cabal` file](/liquidhaskell-cabal-demo.cabal).
 
 Once everything is set up, this sample project can be built with one of:
 
