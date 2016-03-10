@@ -1,5 +1,10 @@
 # liquidhaskell-cabal-demo
 
+*Demo of Liquid Haskell integration with Cabal and stack.*
+
+[![Hackage](https://img.shields.io/hackage/v/liquidhaskell-cabal-demo.svg)](https://hackage.haskell.org/package/liquidhaskell-cabal-demo)
+[![Hackage-Deps](https://img.shields.io/hackage-deps/v/liquidhaskell-cabal-demo.svg)](http://packdeps.haskellers.com/feed?needle=liquidhaskell-cabal-demo)
+
 This is an example of a project set up with
 [liquidhaskell-cabal](https://github.com/spinda/liquidhaskell-cabal). The most
 useful information is in the setup of the
