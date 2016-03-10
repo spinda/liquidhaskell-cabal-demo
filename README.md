@@ -40,7 +40,7 @@ This will do a normal build without LiquidHaskell active. To build and verify
 with LiquidHaskell, run one of:
 
 ```
-stack build --flag liquidhaskell-cabal-demo:liquidhaskell # for stack
-cabal configure -fliquidhaskell && cabal build            # for Cabal
+stack build --flag liquidhaskell-cabal-demo:liquidhaskell # if you're using stack
+cabal configure -fliquidhaskell && cabal build            # if you're using Cabal directly
 ```
 
