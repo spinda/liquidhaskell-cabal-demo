@@ -1,38 +1,45 @@
 # liquidhaskell-cabal-demo
 
-This is nearly complete, but:
+This is an example of a project set up with
+[liquidhaskell-cabal](https://github.com/spinda/liquidhaskell-cabal). The most
+useful information is in the setup of the
+[`.cabal` file](/liquidhaskell-cabal-demo.cabal). You might also want to have a
+look at the sample [`Setup.hs` file](/Setup.hs) (just two lines!) and the
+[`stack.yaml` file](/stack.yaml).
 
-- Right now your `liquid` binary needs to be built from the very latest code on
-  the `develop` branch of `ucsd-progsys/liquidhaskell`.
-- Some more documentation is needed.
-- `Setup.hs` dependencies won't make it into Cabal until 1.24, so the
-  `Setup.hs` script in this project has all the code from `liquidhaskell-cabal`
-  copied into it for now. Ideally it would be just two lines long:
+To use LiquidHaskell at all, you'll need to have the LiquidHaskell binary
+installed and available in `$PATH`, via one of:
 
-  ```haskell
-  import LiquidHaskell.Cabal
-  main = liquidHaskellMain
-  ```
-- The current format of LiquidHaskell's output is rather noisy compared to the
-  rest of the Cabal output.
+```
+stack install liquidhaskell # if you're using stack
+cabal install liquidhaskell # if you're using Cabal directly
+```
 
-To see it in action in its current state, run
+Cabal &lt;1.24 has no support for tracking build dependencies of `Setup.hs`
+files, so until that comes out, if you're using Cabal directly, you'll also
+need to install `liquidhaskell-cabal` manually before trying to build this
+project.
+
+```
+cabal install liquidhaskell-cabal
+```
+
+If you're using stack, this should be taken care of by the
+`liquidhaskell-cabal-0.1.0.0` entry in this project's
+[`stack.yaml`](/stack.yaml) `extra-deps` field.
+
+Once everything is set up, this sample project can be built with one of:
 
 ```
 stack build # if you're using stack
-cabal build # if you're using Cabal
+cabal build # if you're using Cabal directly
 ```
 
-to build without LiquidHaskell active. Then (making sure you have the
-LiquidHaskell binary installed), run
+This will do a normal build without LiquidHaskell active. To build and verify
+with LiquidHaskell, run one of:
 
 ```
 stack build --flag liquidhaskell-cabal-demo:liquidhaskell # for stack
 cabal configure -fliquidhaskell && cabal build            # for Cabal
 ```
-
-to build and verify with LiquidHaskell. Custom GHC options, extensions, C
-source files, include directories, etc. will be passed to the LiquidHaskell
-binary automatically. Check `liquidhaskell-cabal-demo.cabal` for an example of
-the configuration.
 
