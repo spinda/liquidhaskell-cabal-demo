@@ -44,3 +44,7 @@ executable ffi
   c-sources:               include/foo.c
   x-liquidhaskell-options: --diff
 
+source-repository head
+  type:                git
+  location:            https://github.com/spinda/liquidhaskell-cabal-demo
+
