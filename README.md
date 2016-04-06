@@ -20,6 +20,8 @@ stack install liquidhaskell # if you're using stack
 cabal install liquidhaskell # if you're using Cabal directly
 ```
 
+Please make sure you have a version >= 0.6.0.0 installed.
+
 Cabal &lt;1.24 has no support for tracking build dependencies of `Setup.hs`
 files, so until that comes out, if you're using Cabal directly, you'll also
 need to install `liquidhaskell-cabal` manually before trying to build this
