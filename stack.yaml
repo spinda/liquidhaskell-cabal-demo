@@ -5,5 +5,5 @@ packages:
 explicit-setup-deps:
   "*": true
 extra-deps:
-- liquidhaskell-cabal-0.1.0.0
+- liquidhaskell-cabal-0.1.1.0
 
