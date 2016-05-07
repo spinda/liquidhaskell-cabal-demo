@@ -32,7 +32,6 @@ library
   ghc-options:             -rtsopts
                            -with-rtsopts=-N
                            -Wall
-                           -Werror
   x-liquidhaskell-options: --diff --no-termination
 
 executable ffi
@@ -48,7 +47,6 @@ executable ffi
                            -rtsopts
                            -with-rtsopts=-N
                            -Wall
-                           -Werror
   x-liquidhaskell-options: --diff
 
 source-repository head
