@@ -21,10 +21,10 @@ includes:
 ## Pre-Flight Setup
 
 To use LiquidHaskell at all, you'll need to have the LiquidHaskell binary
-installed and available in `$PATH`, via one of:
+installed and available in your $PATH, via one of:
 
 ```
-stack install liquidhaskell # if you're using stack
+stack install liquidhaskell # if you're using Stack
 cabal install liquidhaskell # if you're using Cabal directly
 ```
 
