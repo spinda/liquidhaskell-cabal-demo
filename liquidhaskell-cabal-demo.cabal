@@ -1,5 +1,5 @@
 name:                     liquidhaskell-cabal-demo
-version:                  0.1.0.0
+version:                  0.1.1.0
 synopsis:                 Demo of Liquid Haskell integration for Cabal and stack
 description:              Please see the README on GitHub for more information.
 homepage:                 https://github.com/spinda/liquidhaskell-cabal-demo#readme
@@ -25,7 +25,7 @@ flag liquidhaskell
 library
   exposed-modules:         A, B, C
   build-depends:           base >=4.8 && <5
-                         , liquidhaskell-cabal >= 0.1 && < 0.2
+                         , liquidhaskell-cabal >= 0.1.1 && < 0.2
   hs-source-dirs:          src
   default-language:        Haskell2010
   default-extensions:      TupleSections
@@ -34,7 +34,7 @@ library
 executable ffi
   main-is:                 FFI.hs
   build-depends:           base >=4.8 && <5
-                         , liquidhaskell-cabal >= 0.1 && < 0.2
+                         , liquidhaskell-cabal >= 0.1.1 && < 0.2
   hs-source-dirs:          app
   default-language:        Haskell2010
   default-extensions:      ForeignFunctionInterface
