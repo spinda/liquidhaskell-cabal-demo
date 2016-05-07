@@ -8,5 +8,9 @@ foreign import ccall unsafe "foo.c foo" c_foo
   :: CInt -> IO CInt
 
 main :: IO ()
-main = print . fromIntegral =<< c_foo 1
+main = print =<< foo 1
+
+{-@ foo :: x:{Int | x > 0} -> IO Int @-}
+foo :: Int -> IO Int
+foo = fmap fromIntegral . c_foo . fromIntegral
 
