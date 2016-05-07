@@ -35,7 +35,7 @@ If you're using Cabal &lt;1.24, you'll need to install the
 make it available to the Setup.hs file.
 
 ```
-cabal install liquidhaskell-cabal
+cabal install liquidhaskell-cabal-0.1.1.0
 ```
 
 Stack and Cabal &gt;=1.24 can automatically handle Setup.hs dependencies.
