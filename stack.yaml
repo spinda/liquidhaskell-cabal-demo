@@ -1,9 +1,12 @@
-resolver: lts-5.5
+resolver: lts-13.11
 compiler-check: newer-minor
+
 packages:
-- .
+  - ../liquidhaskell-cabal/ 
+  - '.' 
+
 explicit-setup-deps:
   "*": true
-extra-deps:
-- liquidhaskell-cabal-0.1.1.0
+
+extra-deps: [] 
 
