@@ -5,5 +5,5 @@ plus :: Int -> Int -> Int
 plus x y = x + y
 
 test :: String -> (String, String)
-test = ("test", )
+test x = ("test", x)
 
