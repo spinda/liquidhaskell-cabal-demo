@@ -8,5 +8,4 @@ packages:
 explicit-setup-deps:
   "*": true
 
-extra-deps: [] 
-
+extra-deps: []
