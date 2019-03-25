@@ -1,8 +1,8 @@
-resolver: lts-13.11
+resolver: lts-13.14
 compiler-check: newer-minor
 
 packages:
-  - ../liquidhaskell-cabal/ 
+  - ../liquidhaskell-cabal/
   - '.' 
 
 explicit-setup-deps:
