@@ -3,7 +3,7 @@ compiler-check: newer-minor
 
 packages:
   - ../liquidhaskell-cabal/
-  - '.' 
+  - '.'
 
 explicit-setup-deps:
   "*": true
