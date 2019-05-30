@@ -10,9 +10,9 @@
 This is a sample project set up with
 [liquidhaskell-cabal](https://github.com/spinda/liquidhaskell-cabal). It includes:
 
-- A [.cabal file](/liquidhaskell-cabal-demo) configured for `liquidhaskell-cabal`, including custom
+- A [.cabal file](liquidhaskell-cabal-demo) configured for `liquidhaskell-cabal`, including custom
   LiquidHaskell flags for each component of the package.
-- A [Setup.hs file](/Setup.hs) file set up to hook liquidhaskell-cabal into the build process.
+- A [Setup.hs file](Setup.hs) file set up to hook liquidhaskell-cabal into the build process.
 
 ## Pre-Flight Setup
 
@@ -52,3 +52,17 @@ stack build --flag liquidhaskell-cabal-demo:liquidhaskell # if you're using Stac
 cabal configure -fliquidhaskell && cabal build            # if you're using Cabal directly
 ```
 
+## License
+
+The `liquidhaskell-cabal-demo` sample project is licensed under the
+[CC0 1.0 Universal Public Domain Dedication](LICENSE).
+
+Helpful resources:
+
+- [Creative Commons's CC0 summary](https://creativecommons.org/publicdomain/zero/1.0/)
+- [Creative Commons's CC0 FAQ](https://wiki.creativecommons.org/wiki/CC0_FAQ)
+
+### Contribution
+
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in
+this work by you shall be licensed as above, without any additional terms or conditions.
