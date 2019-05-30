@@ -8,19 +8,16 @@
 ## What's This?
 
 This is a sample project set up with
-[liquidhaskell-cabal](https://github.com/spinda/liquidhaskell-cabal). It
-includes:
+[liquidhaskell-cabal](https://github.com/spinda/liquidhaskell-cabal). It includes:
 
-- A [.cabal file](/liquidhaskell-cabal-demo) configured for
-  `liquidhaskell-cabal`, including custom LiquidHaskell flags for each component
-  of the package.
-- A [Setup.hs file](/Setup.hs) file set up to hook liquidhaskell-cabal into the
-  build process.
+- A [.cabal file](/liquidhaskell-cabal-demo) configured for `liquidhaskell-cabal`, including custom
+  LiquidHaskell flags for each component of the package.
+- A [Setup.hs file](/Setup.hs) file set up to hook liquidhaskell-cabal into the build process.
 
 ## Pre-Flight Setup
 
-To use LiquidHaskell at all, you'll need to have the LiquidHaskell binary
-installed and available in your $PATH, via one of:
+To use LiquidHaskell at all, you'll need to have the LiquidHaskell binary installed and available
+in your $PATH, via one of:
 
 ```
 stack install liquidhaskell # if you're using Stack
@@ -29,9 +26,8 @@ cabal install liquidhaskell # if you're using Cabal directly
 
 (Please make sure you have a version &gt;= 0.6.0.0 installed.)
 
-If you're using Cabal &lt;1.24, you'll need to install the
-`liquidhaskell-cabal` package manually before trying to build this project, to
-make it available to the Setup.hs file.
+If you're using Cabal &lt;1.24, you'll need to install the `liquidhaskell-cabal` package manually
+before trying to build this project, to make it available to the Setup.hs file.
 
 ```
 cabal install liquidhaskell-cabal-0.2.1.0
