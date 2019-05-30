@@ -12,11 +12,10 @@ This is a sample project set up with
 includes:
 
 - A [.cabal file](/liquidhaskell-cabal-demo) configured for
-  liquidhaskell-cabal, including custom LiquidHaskell flags for each component
+  `liquidhaskell-cabal`, including custom LiquidHaskell flags for each component
   of the package.
 - A [Setup.hs file](/Setup.hs) file set up to hook liquidhaskell-cabal into the
   build process.
-- A [stack.yaml file](/stack.yaml) demonstrating the small tweaks needed to use
 
 ## Pre-Flight Setup
 
