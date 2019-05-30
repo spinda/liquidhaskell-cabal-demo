@@ -1,8 +1,8 @@
 name:                     liquidhaskell-cabal-demo
-version:                  0.2.0.1
+version:                  0.2.1.0
 synopsis:                 Demo of Liquid Haskell integration for Cabal and stack
 description:              Please see the
-                          <https://github.com/spinda/liquidhaskell-cabal-demo/blob/0.2.0.1/README.md README>
+                          <https://github.com/spinda/liquidhaskell-cabal-demo/blob/0.2.1.0/README.md README>
                           on GitHub for more information.
 homepage:                 https://github.com/spinda/liquidhaskell-cabal-demo#readme
 bug-reports:              https://github.com/spinda/liquidhaskell-cabal-demo/issues
@@ -17,7 +17,7 @@ build-type:               Custom
 extra-source-files:       include/foo.h
 
 custom-setup
-  setup-depends:           base, Cabal, liquidhaskell-cabal >= 0.2.0
+  setup-depends:           base, Cabal, liquidhaskell-cabal >= 0.2.1
 
 flag liquidhaskell
   description:             After building, verify with LiquidHaskell
@@ -26,7 +26,7 @@ flag liquidhaskell
 library
   exposed-modules:         A, B, C
   build-depends:           base >=4.8 && <5
-                         , liquidhaskell-cabal >= 0.2
+                         , liquidhaskell-cabal >= 0.2.1
   hs-source-dirs:          src
   default-language:        Haskell2010
   default-extensions:      TupleSections
@@ -35,8 +35,11 @@ library
 
 executable ffi
   main-is:                 FFI.hs
+  other-modules:           Checked.X1
+                         , Checked.X2
+                         , Unchecked
   build-depends:           base >=4.8 && <5
-                         , liquidhaskell-cabal >= 0.2
+                         , liquidhaskell-cabal >= 0.2.1
   hs-source-dirs:          app
   default-language:        Haskell2010
   default-extensions:      ForeignFunctionInterface
@@ -47,6 +50,9 @@ executable ffi
                            -with-rtsopts=-N
                            -Wall
   x-liquidhaskell-options: --diff
+  x-liquidhaskell-options: --no-termination
+  x-liquidhaskell-verify: app/FFI.hs
+  x-liquidhaskell-verify: app/Checked
 
 source-repository head
   type:                git
