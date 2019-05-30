@@ -1,6 +1,6 @@
 name:                     liquidhaskell-cabal-demo
 version:                  0.2.1.0
-synopsis:                 Demo of Liquid Haskell integration for Cabal and stack
+synopsis:                 Demo of Liquid Haskell integration for Cabal and Stack
 description:              Please see the
                           <https://github.com/spinda/liquidhaskell-cabal-demo/blob/0.2.1.0/README.md README>
                           on GitHub for more information.
